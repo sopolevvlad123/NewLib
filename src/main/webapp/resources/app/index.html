@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="shortcut icon" href="/app/img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="data:;base64,=">
+
+</head>
+
+<div align="center">
+
+<table>
+<tr>
+
+ <td>   <button onclick="decrement()" style=" height: 700px ; width: 60px"></button></td>
+
+<td> <img id="image" width="500" height="700" > </td>
+
+<td> <button onclick="increment()" style=" height: 700px ; width: 60px" ></button></td>
+
+
+</tr>
+
+</table>
+
+</div>
+<script>
+
+    var page = 1;
+
+    function updateUtl(){
+    var url = "http://10.251.0.21:8080/app/books/1006/"+ page +".jpg";
+    document.getElementById("image").setAttribute("src", url);
+
+    }
+
+    updateUtl();
+
+    function increment(){
+        ++page;
+        updateUtl();
+    }
+
+    function decrement(){
+       if (page > 1) {
+           --page;
+           updateUtl();
+       }
+    }
+
+</script>
+
+</body>
+</html>
