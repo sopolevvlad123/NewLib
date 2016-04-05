@@ -41,7 +41,8 @@ public class MainController {
         System.out.println("SESSION IN CONTROLLER "  + httpSession.getId());
 
         User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        System.out.println("NAME OF PRINCIPAL = " + user.getUsername() + "  " + httpSession.getId());
+        System.out.println("NAME OF PRINCIPAL" +
+                " = " + user.getUsername() + "  " + httpSession.getId());
         httpSession.setAttribute("name", user.getUsername());
         ftpService.download(String.valueOf(id));
         System.out.println(id);
