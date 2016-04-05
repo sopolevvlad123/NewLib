@@ -13,12 +13,15 @@
 
 <div align="center">
 
+    <a href="/login"> LOGIN </a>
+    <a href ='/j_spring_security_logout'> logout  </a>
+
 <table>
 <tr>
 
  <td>   <button onclick="decrement()" style=" height: 700px ; width: 60px"></button></td>
 
-<td> <img id="image" width="500" height="700" > </td>
+<td> <table id="image" width="500" height="700" >  </table> </td>
 
 <td> <button onclick="increment()" style=" height: 700px ; width: 60px" ></button></td>
 
@@ -32,23 +35,24 @@
 
     var page = 1;
 
-    function updateUtl(){
+    function updateUrl(){
     var url = "http://10.251.0.21:8080/app/books/1006/"+ page +".jpg";
-    document.getElementById("image").setAttribute("src", url);
+   // document.getElementById("image").setAttribute("src", url);
+    document.getElementById("image").setAttribute("style", "background-image:url("+url+");width:500;height:700;background-size: contain;");
 
     }
 
-    updateUtl();
+    updateUrl();
 
     function increment(){
         ++page;
-        updateUtl();
+        updateUrl();
     }
 
     function decrement(){
        if (page > 1) {
            --page;
-           updateUtl();
+           updateUrl();
        }
     }
 

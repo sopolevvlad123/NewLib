@@ -17,7 +17,7 @@ public class UserDaoMock {
     public UserDaoMock(){
 
        // storage.put( "vasya" ,new UserMock("vasya", "81DC9BDB52D04DC20036DBD8313ED055", "ROLE_USER"));
-        storage.put( "vasya" ,new UserMock("vasya", "1111", "ROLE_USER"));
+        storage.put( "vasya" ,new UserMock("vasya", new Md5PasswordEncoder().encodePassword("1234", null), "ROLE_USER"));
         storage.put("admin", new UserMock("admin",new Md5PasswordEncoder().encodePassword("1111", null), "ROLE_ADMIN"));
     }
 

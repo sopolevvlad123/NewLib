@@ -3,12 +3,16 @@ package ua.edu.nlu.oldlib.controller;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
+import org.springframework.http.HttpRequest;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import ua.edu.nlu.oldlib.service.FtpService;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 /**
@@ -32,8 +36,13 @@ public class MainController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public String hello(@PathVariable("id") Integer id  ){
-      //  System.out.println("Hellooo");
+    public String hello(@PathVariable("id") Integer id, HttpSession httpSession){
+
+        System.out.println("SESSION IN CONTROLLER "  + httpSession.getId());
+
+        User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        System.out.println("NAME OF PRINCIPAL = " + user.getUsername() + "  " + httpSession.getId());
+        httpSession.setAttribute("name", user.getUsername());
         ftpService.download(String.valueOf(id));
         System.out.println(id);
 
