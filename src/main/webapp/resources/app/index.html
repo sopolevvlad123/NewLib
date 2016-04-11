@@ -36,7 +36,7 @@
     var page = 1;
 
     function updateUrl(){
-    var url = "http://10.251.0.21:8080/app/books/1006/"+ page +".jpg";
+    var url = "http://10.251.0.21:8080/img/1006?pageId="+ page ;
    // document.getElementById("image").setAttribute("src", url);
     document.getElementById("image").setAttribute("style", "background-image:url("+url+");width:500;height:700;background-size: contain;");
 

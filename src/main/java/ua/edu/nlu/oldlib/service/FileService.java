@@ -1,5 +1,6 @@
 package ua.edu.nlu.oldlib.service;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
@@ -9,6 +10,21 @@ import java.io.File;
  */
 @Service
 public class FileService {
+
+    @Value("${directory}")
+    private String DIRECTORY;
+
+
+    public File getPage(int bookId, String page){
+        File file = new File(DIRECTORY + "/" + bookId + "/" + page + ".jpg");
+
+        if (!file.exists()){
+            //TODO: "Could not find file"
+        }
+
+        return file;
+
+    }
 
 
     public void deleteFile(String path) {

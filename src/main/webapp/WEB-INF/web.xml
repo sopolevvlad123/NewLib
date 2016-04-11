@@ -41,14 +41,14 @@
     </filter-mapping>
 
 
-    <filter>
-        <filter-name>imageFilter</filter-name>
-        <filter-class>ua.edu.nlu.oldlib.filter.ImageFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>imageFilter</filter-name>
-        <url-pattern>/app/books/*</url-pattern>
-    </filter-mapping>
+    <!--<filter>-->
+        <!--<filter-name>imageFilter</filter-name>-->
+        <!--<filter-class>ua.edu.nlu.oldlib.filter.ImageFilter</filter-class>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>imageFilter</filter-name>-->
+        <!--<url-pattern>/img/*</url-pattern>-->
+    <!--</filter-mapping>-->
 
 
 
