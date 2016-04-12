@@ -1,9 +1,7 @@
-package com.entity;
+package ua.edu.nlu.oldlib.entity;
 
-import javax.annotation.Resource;
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;

@@ -1,15 +1,13 @@
-package com.dao.impl;
+package ua.edu.nlu.oldlib.dao.impl;
 
-import com.dao.UserDao;
+import ua.edu.nlu.oldlib.dao.UserDao;
 import com.entity.User;
 import org.hibernate.Hibernate;
 import org.hibernate.Session;
 
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 

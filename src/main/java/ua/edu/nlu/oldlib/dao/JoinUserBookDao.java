@@ -1,12 +1,8 @@
-package com.dao;
+package ua.edu.nlu.oldlib.dao;
 
-import com.entity.Book;
 import com.entity.JoinUserBook;
-import com.entity.Range;
-import com.entity.User;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
 /**
  * Created by pc9 on 01.04.16.
  */

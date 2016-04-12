@@ -1,9 +1,9 @@
-package com.services;
+package ua.edu.nlu.oldlib.service;
 
-import com.dao.UserDao;
-import com.entity.JoinUserBook;
-import com.entity.Range;
-import com.entity.User;
+import ua.edu.nlu.oldlib.dao.UserDao;
+import ua.edu.nlu.oldlib.entity.JoinUserBook;
+import ua.edu.nlu.oldlib.entity.Range;
+import ua.edu.nlu.oldlib.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

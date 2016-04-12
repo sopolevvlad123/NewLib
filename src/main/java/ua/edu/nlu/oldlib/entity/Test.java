@@ -1,16 +1,12 @@
-package com.entity;
+package ua.edu.nlu.oldlib.entity;
 
-import com.dao.BookDao;
-import com.dao.JoinUserBookDao;
-import com.dao.RangeDao;
-import com.dao.UserDao;
+import ua.edu.nlu.oldlib.dao.BookDao;
+import ua.edu.nlu.oldlib.dao.JoinUserBookDao;
+import ua.edu.nlu.oldlib.dao.RangeDao;
+import ua.edu.nlu.oldlib.dao.UserDao;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
 
 /**
  * Created by pc9 on 28.03.16.

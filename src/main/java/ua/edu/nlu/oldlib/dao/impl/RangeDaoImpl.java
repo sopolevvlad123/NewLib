@@ -1,7 +1,7 @@
-package com.dao.impl;
+package ua.edu.nlu.oldlib.dao.impl;
 
-import com.dao.JoinUserBookDao;
-import com.dao.RangeDao;
+import ua.edu.nlu.oldlib.dao.JoinUserBookDao;
+import ua.edu.nlu.oldlib.dao.RangeDao;
 import com.entity.JoinUserBook;
 import com.entity.Range;
 import org.hibernate.Criteria;

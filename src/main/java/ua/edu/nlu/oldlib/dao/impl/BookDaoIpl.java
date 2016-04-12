@@ -1,8 +1,7 @@
-package com.dao.impl;
+package ua.edu.nlu.oldlib.dao.impl;
 
-import com.dao.BookDao;
+import ua.edu.nlu.oldlib.dao.BookDao;
 import com.entity.Book;
-import com.entity.User;
 import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

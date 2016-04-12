@@ -1,8 +1,7 @@
-package com.dao.impl;
+package ua.edu.nlu.oldlib.dao.impl;
 
-import com.dao.JoinUserBookDao;
+import ua.edu.nlu.oldlib.dao.JoinUserBookDao;
 import com.entity.JoinUserBook;
-import com.entity.Range;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -10,8 +9,6 @@ import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 /**
  * Created by pc9 on 01.04.16.

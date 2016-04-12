@@ -1,4 +1,4 @@
-package com.entity;
+package ua.edu.nlu.oldlib.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;

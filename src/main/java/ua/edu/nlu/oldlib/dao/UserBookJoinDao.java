@@ -1,4 +1,4 @@
-package com.dao;
+package ua.edu.nlu.oldlib.dao;
 
 import com.entity.Book;
 import com.entity.User;

@@ -1,7 +1,7 @@
-package com.services;
+package ua.edu.nlu.oldlib.service;
 
-import com.dao.BookDao;
-import com.entity.Book;
+import ua.edu.nlu.oldlib.dao.BookDao;
+import ua.edu.nlu.oldlib.entity.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

@@ -1,20 +1,15 @@
-package com.services;
+package ua.edu.nlu.oldlib.service;
 
-import com.dao.BookDao;
-import com.dao.JoinUserBookDao;
-import com.dao.UserDao;
-import com.entity.Book;
-import com.entity.JoinUserBook;
-import com.entity.Range;
-import com.entity.User;
-import org.hibernate.Criteria;
-import org.hibernate.Session;
-import org.hibernate.criterion.Restrictions;
+import ua.edu.nlu.oldlib.dao.BookDao;
+import ua.edu.nlu.oldlib.dao.JoinUserBookDao;
+import ua.edu.nlu.oldlib.dao.UserDao;
+import ua.edu.nlu.oldlib.entity.Book;
+import ua.edu.nlu.oldlib.entity.JoinUserBook;
+import ua.edu.nlu.oldlib.entity.Range;
+import ua.edu.nlu.oldlib.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.Iterator;
-import java.util.List;
 import java.util.Set;
 
 /**
