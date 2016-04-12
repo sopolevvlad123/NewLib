@@ -21,6 +21,7 @@ import javax.servlet.http.HttpSession;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Enumeration;
 
 /**
  * Created by pc8 on 10.03.16.
@@ -36,9 +37,9 @@ public class MainController {
 
     private static final Logger logger = Logger.getLogger(MainController.class);
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping( value = "/", method = RequestMethod.GET)
     public String index(){
-        System.out.println("Hellooo");
+
          //    ftpTest.download();
 
 
@@ -46,7 +47,14 @@ public class MainController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public String hello(@PathVariable("id") Integer id, HttpSession httpSession){
+    public String hello(@PathVariable("id") Integer id, HttpSession httpSession, HttpServletRequest request){
+
+
+
+            System.out.println("Main : " + request.getHeader("cookie"));
+
+
+
 
         System.out.println("SESSION IN CONTROLLER "  + httpSession.getId());
 
