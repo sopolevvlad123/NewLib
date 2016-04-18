@@ -1,5 +1,6 @@
 package ua.edu.nlu.oldlib.service;
 
+import org.springframework.stereotype.Service;
 import ua.edu.nlu.oldlib.dao.BookDao;
 import ua.edu.nlu.oldlib.dao.JoinUserBookDao;
 import ua.edu.nlu.oldlib.dao.UserDao;
@@ -15,7 +16,7 @@ import java.util.Set;
 /**
  * Created by pc9 on 04.04.16.
  */
-
+@Service
 public class JoinService {
 
     @Autowired

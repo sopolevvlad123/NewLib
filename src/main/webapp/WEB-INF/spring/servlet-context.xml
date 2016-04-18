@@ -44,4 +44,7 @@
 
     <mvc:resources mapping="/app/**" location="resources/app/" />
     <mvc:annotation-driven/>
+
+    <import resource="database-context.xml" />
+
 </beans>

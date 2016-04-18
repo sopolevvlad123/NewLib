@@ -1,7 +1,7 @@
 package ua.edu.nlu.oldlib.dao;
 
-import com.entity.Book;
-import com.entity.User;
+import ua.edu.nlu.oldlib.entity.Book;
+import ua.edu.nlu.oldlib.entity.User;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

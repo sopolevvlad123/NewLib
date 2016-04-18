@@ -1,7 +1,7 @@
 package ua.edu.nlu.oldlib.dao.impl;
 
 import ua.edu.nlu.oldlib.dao.JoinUserBookDao;
-import com.entity.JoinUserBook;
+import ua.edu.nlu.oldlib.entity.JoinUserBook;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

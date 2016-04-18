@@ -1,9 +1,10 @@
 package ua.edu.nlu.oldlib.dao.impl;
 
+import org.springframework.stereotype.Repository;
 import ua.edu.nlu.oldlib.dao.JoinUserBookDao;
 import ua.edu.nlu.oldlib.dao.RangeDao;
-import com.entity.JoinUserBook;
-import com.entity.Range;
+import ua.edu.nlu.oldlib.entity.JoinUserBook;
+import ua.edu.nlu.oldlib.entity.Range;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -15,6 +16,7 @@ import java.util.List;
 /**
  * Created by pc9 on 05.04.16.
  */
+@Repository
 public class RangeDaoImpl implements RangeDao {
     @Autowired
     private SessionFactory sessionFactory;

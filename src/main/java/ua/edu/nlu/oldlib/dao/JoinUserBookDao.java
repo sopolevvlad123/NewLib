@@ -1,6 +1,6 @@
 package ua.edu.nlu.oldlib.dao;
 
-import com.entity.JoinUserBook;
+import ua.edu.nlu.oldlib.entity.JoinUserBook;
 import org.springframework.stereotype.Repository;
 
 /**

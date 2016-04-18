@@ -42,6 +42,8 @@ public class MainController {
 
          //    ftpTest.download();
 
+        System.out.println("Index principal = " + SecurityContextHolder.getContext().getAuthentication().getPrincipal());
+
 
         return "app/index.html";
     }

@@ -18,10 +18,10 @@
         <property name="dataSource" ref="dataSource" />
         <property name="annotatedClasses">
             <list>
-                <value>com.entity.Book</value>
-                <value>com.entity.JoinUserBook</value>
-                <value>com.entity.Range</value>
-                <value>com.entity.User</value>
+                <value>ua.edu.nlu.oldlib.entity.Book</value>
+                <value>ua.edu.nlu.oldlib.entity.JoinUserBook</value>
+                <value>ua.edu.nlu.oldlib.entity.Range</value>
+                <value>ua.edu.nlu.oldlib.entity.User</value>
             </list>
         </property>
         <property name="hibernateProperties">
@@ -53,19 +53,19 @@
 
 
 
-    <bean id="UserDao" class="com.dao.impl.UserDaoImpl" >
-    <property name="sessionFactory" ref="sessionFactory" /></bean>
+    <!--<bean id="UserDao" class="ua.edu.nlu.oldlib.dao.impl.UserDaoImpl" >-->
+    <!--<property name="sessionFactory" ref="sessionFactory" /></bean>-->
 
-    <bean id="BookDao" class="com.dao.impl.BookDaoIpl" >
-        <property name="sessionFactory" ref="sessionFactory" /></bean>
+    <!--<bean id="BookDao" class="ua.edu.nlu.oldlib.dao.impl.BookDaoImpl" >-->
+        <!--<property name="sessionFactory" ref="sessionFactory" /></bean>-->
 
-    <bean id="JoinUserBookDao" class="com.dao.impl.JoinUserBookDaoImpl" >
-        <property name="sessionFactory" ref="sessionFactory" /></bean>
+    <!--<bean id="JoinUserBookDao" class="ua.edu.nlu.oldlib.dao.impl.JoinUserBookDaoImpl" >-->
+        <!--<property name="sessionFactory" ref="sessionFactory" /></bean>-->
 
-    <bean id="RangeDao" class="com.dao.impl.RangeDaoImpl" >
-        <property name="sessionFactory" ref="sessionFactory" /></bean>
+    <!--<bean id="RangeDao" class="ua.edu.nlu.oldlib.dao.impl.RangeDaoImpl" >-->
+        <!--<property name="sessionFactory" ref="sessionFactory" /></bean>-->
 
-    <bean id="Service" class="com.services.JoinServiceImpl" >
-        </bean>
+    <!--<bean id="Service" class="ua.edu.nlu.oldlib.service.JoinService" >-->
+        <!--</bean>-->
 
 </beans>

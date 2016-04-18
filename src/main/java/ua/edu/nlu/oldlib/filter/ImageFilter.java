@@ -14,7 +14,7 @@ import java.io.IOException;
 /**
  * Created by pc8 on 04.04.16.
  */
-@Component
+
 public class ImageFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -23,23 +23,22 @@ public class ImageFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-//        HttpServletRequest request = (HttpServletRequest) servletRequest;
-//        HttpSession session = request.getSession(false);
-//        if(session != null) {
-//
-//            SecurityContextImpl sci = (SecurityContextImpl) session.getAttribute("SPRING_SECURITY_CONTEXT");
-//            System.out.println("Filter session  " + session.getId() );
-//            if (sci != null ) {
-//
-//                UserDetails cud = (UserDetails) sci.getAuthentication().getPrincipal();
-//                System.out.println("FILTER " + cud.getUsername());
-//            }
-//        }
-//
-//        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-//        System.out.println(principal.toString());
-//        System.out.println("Filter  " );
-//        filterChain.doFilter(servletRequest, servletResponse);
+        HttpServletRequest request = (HttpServletRequest) servletRequest;
+        HttpSession session = request.getSession(false);
+        if(session != null) {
+
+            SecurityContextImpl sci = (SecurityContextImpl) session.getAttribute("SPRING_SECURITY_CONTEXT");
+            System.out.println("Filter session  " + session.getId() );
+            if (sci != null ) {
+
+                UserDetails cud = (UserDetails) sci.getAuthentication().getPrincipal();
+                System.out.println("FILTER " + cud.getUsername());
+            }
+        }
+
+        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        System.out.println("Filter principal =  " + principal.toString() );
+        filterChain.doFilter(servletRequest, servletResponse);
 
     }
 

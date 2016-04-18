@@ -40,18 +40,18 @@ public class ImagesController {
         }
 
 
-        System.out.println("Image : " + request.getHeader("cookie"));
+    //    System.out.println("Image : " + request.getHeader("cookie"));
 
-        Object object = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        User user;
-        if (object instanceof User) {
-            user = (User) object;
-            System.out.println("NAME OF PRINCIPAL IN IMAGE CONTROLLER" +
-                    " = " + user.getUsername());
-        }
-
-
-        System.out.println("IMAGE CONTROLLER " + object.toString());
+//        Object object = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+//        User user;
+//        if (object instanceof User) {
+//            user = (User) object;
+//            System.out.println("NAME OF PRINCIPAL IN IMAGE CONTROLLER" +
+//                    " = " + user.getUsername());
+//        }
+//
+//
+//        System.out.println("IMAGE CONTROLLER " + object.toString());
         //  System.out.println( "IMAGE CONTROLLER SESSION " + httpSession.getId());
 
         try (InputStream inputStream = new FileInputStream(fileService.getPage(bookId, pageId))) {

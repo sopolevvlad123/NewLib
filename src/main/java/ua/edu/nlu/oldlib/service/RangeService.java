@@ -1,5 +1,6 @@
 package ua.edu.nlu.oldlib.service;
 
+import org.springframework.stereotype.Service;
 import ua.edu.nlu.oldlib.dao.RangeDao;
 import ua.edu.nlu.oldlib.entity.JoinUserBook;
 import ua.edu.nlu.oldlib.entity.Range;
@@ -10,6 +11,7 @@ import java.util.List;
 /**
  * Created by pc9 on 07.04.16.
  */
+@Service
 public class RangeService {
     @Autowired
     private RangeDao rangeDao;

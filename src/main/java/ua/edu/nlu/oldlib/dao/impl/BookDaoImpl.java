@@ -1,7 +1,7 @@
 package ua.edu.nlu.oldlib.dao.impl;
 
 import ua.edu.nlu.oldlib.dao.BookDao;
-import com.entity.Book;
+import ua.edu.nlu.oldlib.entity.Book;
 import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -14,7 +14,7 @@ import java.util.List;
  * Created by pc9 on 31.03.16.
  */
 @Repository
-public class BookDaoIpl implements BookDao {
+public class BookDaoImpl implements BookDao {
     @Autowired
     private SessionFactory sessionFactory;
 

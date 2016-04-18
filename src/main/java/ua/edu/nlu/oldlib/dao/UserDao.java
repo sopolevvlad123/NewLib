@@ -1,6 +1,6 @@
 package ua.edu.nlu.oldlib.dao;
 
-import com.entity.User;
+import ua.edu.nlu.oldlib.entity.User;
 
 import java.util.List;
 

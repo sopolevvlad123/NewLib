@@ -1,7 +1,7 @@
 package ua.edu.nlu.oldlib.dao.impl;
 
 import ua.edu.nlu.oldlib.dao.UserDao;
-import com.entity.User;
+import ua.edu.nlu.oldlib.entity.User;
 import org.hibernate.Hibernate;
 import org.hibernate.Session;
 
